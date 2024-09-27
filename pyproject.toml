@@ -6,7 +6,7 @@ authors = [""]
 
 [tool.poetry.dependencies]
 python = "~3.9" # PATCH
-numpy="1.26.1" # MAJOR
+numpy="1.26.4" # MAJOR
 
 [build-system]
 requires = ["poetry-core"]
