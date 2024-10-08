@@ -2,9 +2,15 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "constraintsFiltering": "strict",
     "extends": [
-        "config:recommended"
+        "config:best-practices",
+        "group:allDigest",
+        "group:allNonMajor"
     ],
     "packageRules": [
+        {
+            "allowedVersions": "<16",
+            "matchDepNames": ["postgres"]
+        },
         {
             "managers": ["poetry"],
             "versioning": "poetry"
@@ -12,6 +18,11 @@
         {
             "allowedVersions": "<3.12",
             "matchDepNames": ["python"]
+        },
+        {
+            "allowedVersions": "<5",
+            "groupName": "Django",
+            "matchDepNames": ["django", "Django"]
         }
     ]
 }

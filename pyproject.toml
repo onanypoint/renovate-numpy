@@ -6,7 +6,9 @@ authors = [""]
 
 [tool.poetry.dependencies]
 python = "~3.9"
+django="4.2.14"
 numpy="2.0.0"
+pandas="1.2.4"
 
 [build-system]
 requires = ["poetry-core"]
