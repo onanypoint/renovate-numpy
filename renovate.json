@@ -9,20 +9,29 @@
     "packageRules": [
         {
             "allowedVersions": "<16",
-            "matchDepNames": ["postgres"]
+            "matchDepNames": [
+                "postgres"
+            ]
         },
         {
-            "managers": ["poetry"],
+            "matchManagers": [
+                "poetry"
+            ],
             "versioning": "poetry"
         },
         {
             "allowedVersions": "<3.12",
-            "matchDepNames": ["python"]
+            "matchDepNames": [
+                "python"
+            ]
         },
         {
             "allowedVersions": "<5",
             "groupName": "Django",
-            "matchDepNames": ["django", "Django"]
+            "matchDepNames": [
+                "django",
+                "Django"
+            ]
         }
     ]
 }
