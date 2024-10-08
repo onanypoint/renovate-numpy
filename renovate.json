@@ -6,6 +6,10 @@
     ],
     "packageRules": [
         {
+            "managers": ["poetry"],
+            "versioning": "poetry"
+        },
+        {
             "allowedVersions": "<3.12",
             "matchDepNames": ["python"]
         }
